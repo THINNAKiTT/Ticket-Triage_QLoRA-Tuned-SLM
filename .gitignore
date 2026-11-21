@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+
+# Virtual environments
+.venv
+
+# Large / regenerable artifacts: rebuild with `python src/prepare_data.py` and `python src/train.py`.
+# Publish trained weights on the Hugging Face Hub instead of committing them.
+outputs/
+data/
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Local tooling
+.claude/
+.idea/
+.vscode/
+
+# Keep metrics, predictions and charts (small, and they back the README claims)
+!results/
+!assets/

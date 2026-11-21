@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 81/290 [00:00<00:00, 809.49it/s]Loading weights:  92%|█████████▏| 267/290 [00:00<00:00, 1416.68it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1360.91it/s]
+Base model, zero-shot ...
+  8/148  16/148  24/148  32/148  40/148  48/148  56/148  64/148  72/148  80/148  88/148  96/148  104/148  112/148  120/148  128/148  136/148  144/148  148/148
+[zero-shot] valid JSON 93.9% | schema 41.2% | cat 7.4% | urg 19.6% | entity F1 11.4% | full exact 0.0%
+Base model, 8-shot ...
+  8/148  16/148  24/148  32/148  40/148  48/148  56/148  64/148  72/148  80/148  88/148  96/148  104/148  112/148  120/148  128/148  136/148  144/148  148/148
+[few-shot] valid JSON 100.0% | schema 98.6% | cat 33.8% | urg 37.2% | entity F1 8.0% | full exact 0.0%
+Fine-tuned (QLoRA adapter) ...
+  8/148  16/148  24/148  32/148  40/148  48/148  56/148  64/148  72/148  80/148  88/148  96/148  104/148  112/148  120/148  128/148  136/148  144/148  148/148
+[fine-tuned] valid JSON 100.0% | schema 100.0% | cat 79.7% | urg 64.2% | entity F1 24.8% | full exact 9.5%
+Merged model (bf16) ...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  20%|█▉        | 57/290 [00:00<00:00, 565.83it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1462.00it/s]
+  8/148  16/148  24/148  32/148  40/148  48/148  56/148  64/148  72/148  80/148  88/148  96/148  104/148  112/148  120/148  128/148  136/148  144/148  148/148
+[merged-bf16] valid JSON 100.0% | schema 98.0% | cat 76.4% | urg 64.2% | entity F1 25.2% | full exact 7.4%
+Wrote results/eval_qwen2.5-0.5b.json and results/predictions_qwen2.5-0.5b.jsonl
